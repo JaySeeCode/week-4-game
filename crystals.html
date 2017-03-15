@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+
+</head>
+<body>
+
+<div class="container">
+
+	<header><h1>Crystals Collector</h1></header>
+
+	<!-- Instructions -->
+	<main>
+		<p><strong>Welcome to the Crystals Collector Game!</strong></p>
+
+		<p>You will be given a random number at the start of the game.</p>
+
+		<p>There are four crystals below, each one with an individual value.
+			By clicking on a crystal you will add a specific amount of point, that is,
+			the value of the crystal, to your total score.
+		</p>
+
+		<p><strong>Your goal is to match the number you were given at the start of the game.</strong></p>
+
+		<p>If you can do that, you win. However, <strong>you lose if your total score goes above the random number</strong> Understood?</p>
+
+		<p>Oh, by the way, the value of each crystal is hidden from you until you click on it. Pay attention to how the total score changes. Also, you might want to review your basic math...</p>
+
+		<p>One last thing... Every time you start a new game, the values of each crystal will be reset.</p>
+
+		<h3>Good luck!</h3>
+
+	</main>
+
+	<div id="score">
+		
+	</div>
+
+	<div id="test-display">
+		
+	</div>
+
+	<div id="tracker">
+		<div id="win">
+			<strong>Wins: 0</strong>
+		</div>
+
+		<div id="lose">
+			<strong>Losses: 0</strong>
+		</div>
+	</div>
+
+	<div id="clear-float"></div>
+
+
+	<img src="assets/images/blue.jpg" class="crystal img-thumbnail" id="blue" >
+	<img src="assets/images/purple.jpg" class="crystal img-thumbnail" id="purple">
+	<img src="assets/images/ruby.jpg"class="crystal img-thumbnail" id="ruby">
+	<img src="assets/images/pointy.jpg" class="crystal img-thumbnail" id="pointy">
+
+	<br>
+
+	<p id="alert">
+		<strong>Your total score is:</strong>
+	</p>
+
+	<div id="total">
+		<strong>0</strong>
+	</div>
+
+	<button type="button" class="btn btn-info button">Play Again</button>
+
+
+<!-- end of container div -->
+</div>
+
+<script src="assets/javascript/logic.js"></script>
+
+	
+</body>
+</html>

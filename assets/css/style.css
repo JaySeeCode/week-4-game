@@ -1,0 +1,80 @@
+body{
+	/*background-image: url(http://www.photo-graphix.fr/storephoto/grim/sec_but_03.jpg);*/
+	background-image: url(https://cdna.artstation.com/p/assets/images/images/002/226/580/large/joel-cuellar-3d-cave-lighting-joel-cuellar-environment-artist.jpg?1458949974);
+	background-repeat: no-repeat;
+
+}
+
+.crystal{
+	width: 150px;
+	height: 150px;
+}
+
+header{
+	background-color: orange;
+	padding: 5px;
+	margin-top: 10px;
+	width: 30%;
+	color: gray;
+	text-align: center;
+}
+
+main{
+	padding: 20px;
+	background: lightblue;
+	width: 450px;
+	height: 480px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#score{
+	background-color: lightgreen;
+	width: 210px;
+	height: 75px;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 1px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#tracker{
+	background-color: lightblue;
+	width: 150px;
+	height: 75px;
+	float: left;
+	margin-left: 5px;
+	padding: 7px;
+	padding-top: 15px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#clear-float{
+	clear: both;
+}
+
+img:hover{
+	background-color: gray;
+}
+
+#alert{
+	margin-top: 10px;
+	background-color: lightgreen;
+	width: 140px;
+}
+
+#total{
+	background-color: lightgreen;
+	width: 210px;
+	height: 75px;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 1px;
+	margin-bottom: 10px;
+}
+
+.container{
+	margin-bottom: 20px;
+}
