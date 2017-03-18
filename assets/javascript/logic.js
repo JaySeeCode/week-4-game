@@ -104,15 +104,22 @@
 
 	// FUNCTIONS
 
-	function generateScoreNum(){
+	function generateScoreNum() {
 
 		var num = Math.floor(Math.random()*(47-31+1)+31);
 		return num;
 
 	}
 
-	function generateCrystalNum(){
+	function generateCrystalNum() {
+
 		var num = Math.floor(Math.random()*(9-1+1)+1);
+
+		while( num === numBlue || num === numPurple || num === numPointy || num === numRuby ){
+			num = Math.floor(Math.random()*(9-1+1)+1);
+		} 
+
+
 		return num;
 	}
 
@@ -126,11 +133,21 @@
 		numRuby = generateCrystalNum();
 		numPointy = generateCrystalNum();
 
+		console.log(numBlue);
+		console.log(numPurple);
+		console.log(numRuby);
+		console.log(numPointy);
+
+
 		checkForMatches();
 		
 	}
 
-	function checkForMatches(){
+	function checkForMatches(array) {
+
+
+
+
 		if((numBlue == numPurple) || (numBlue == numRuby) || (numBlue == numPointy)){
 
 			numBlue = generateCrystalNum();
